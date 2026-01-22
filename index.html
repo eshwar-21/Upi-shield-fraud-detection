@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UPI Shield | Detects fraud before you pay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.29/build/spline-viewer.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@100;300;400;500;700&display=swap');
+      
+      :root {
+        --neon-blue: #00f2ff;
+        --neon-purple: #bc13fe;
+        --neon-green: #39ff14;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #020617;
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+
+      h1, h2, h3, .font-space {
+        font-family: 'Space Grotesk', sans-serif;
+      }
+
+      .glass {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .neon-glow-blue {
+        box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+      }
+
+      .neon-text-blue {
+        text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #020617;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #334155;
+      }
+
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+
+      .animate-float {
+        animation: float 4s ease-in-out infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
